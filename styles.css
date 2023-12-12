@@ -1,9 +1,0 @@
-.home .content img{
-    
-    width:30rem;
-    border-radius: 10rem 20rem;
-    object-fit: cover;
-    border:1rem solid var(--rad);
-    border-left: rgb(85, 12, 18);
-    cursor: pointer;
-}

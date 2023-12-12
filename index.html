@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> 
-            Aayush Kafle
-        </title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush Kafle</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6Dk5NDLa1f791S5t7M5b6GauJPT5sI9W4+QoFpH8QeRJcfa6OM9Q7tGmGxj2pVzl/86c70eI5HzD+js+3QtrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 
-        <!-- link the css file below -->
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+    <div id="preloader"></div>
 
-    <body>
-        <div id="preloader"></div>
+    <!-- Create the header navigation -->
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Create the header navigation -->
-        <header>
-            <div id="menu-bars" class="fas fa-bars"></div>
-            
-            <nav class="navbar"> 
-                <a href="index.html">
-                    home
-                </a>
-                <a href="contact_me.html">
-                    Contact me
-                </a>
-                <a href="projects.html">
-                    projects
-                </a>
-            </nav>
-        </header>
+    <!-- Create the body of the page -->
+    <section class="home" id="home">
+        <div id="particles-js"></div>
+        <div class="content">
+            <img class="tilt" src="pictures/me.jpg" alt="Aayush Kafle">
+            <h3>Aayush <span>Kafle</span></h3>
+            <p>I am a <span class="typing-text">...</span></p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+    </section>
 
-        <!-- Create the body of the page -->
-        <section class="home" id="home">
-            <div id="particles-js"></div>
-            <div class="content">
-                <img class="tilt" src="pictures/me.jpg" alt="">
-                <h3> Aayush <span>Kafle</span> </h3>
-                <p> I am a <span class="typing-text">...</span> </p>
-                <a href="#about" class="btn">about me</a>
-            </div>
-        </section>
-    </body>
+    <!-- Add other sections for About, Services, Portfolio, Contact, Blogs, Gallery -->
+
+    <script src="scripts.js"></script>
+</body>
 </html>
