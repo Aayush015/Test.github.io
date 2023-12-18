@@ -1,10 +1,5 @@
-const video = document.getElementById('background-video');
-const soundButton = document.getElementById('sound-button');
-
-function toggleSound() {
-  video.muted = !video.muted;
-}
-
-video.addEventListener('canplay', function() {
-  video.play();
+document.addEventListener("DOMContentLoaded", function () {
+  // Hide the preloader
+  var preloader = document.getElementById("preloader");
+  preloader.style.display = "none";
 });
