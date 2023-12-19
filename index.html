@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aayush Kafle</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Font css link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6Dk5NDLa1f791S5t7M5b6GauJPT5sI9W4+QoFpH8QeRJcfa6OM9Q7tGmGxj2pVzl/86c70eI5HzD+js+3QtrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom css link -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="preloader"></div>
-
     <!-- Create the header navigation -->
     <header>
         <div id="menu-bars" class="fas fa-bars"></div>
         
-        <nav class="navbar"> 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="services.html">services</a>
+            <a href="portfolio.html">portfolio</a>
+            <a href="#contact">contact</a>
+            <a href="blogs.html">blogs</a>
+            <a href="image.html">gallery</a>
         </nav>
     </header>
 
@@ -34,14 +34,124 @@
         <div class="content">
             <img class="tilt" src="pictures/me.jpg" alt="Aayush Kafle">
             <h3>Aayush <span>Kafle</span></h3>
-            <p>I am a Junior at UNM studying Computer Science with a 
-                minor in Mathematics. <span class="typing-text">...</span></p>
+            <p>I am a <span class="typing-text">...</span></p>
             <a href="#about" class="btn">About Me</a>
         </div>
     </section>
 
-    <!-- Add other sections for About, Services, Portfolio, Contact, Blogs, Gallery -->
+    <!-- Create the about section -->
+    <section class="about" id = "about">
+        <h1 class="heading"> About <span> me </span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="pictures/me.jpg" alt="Aayush Kafle">
+        </div>
+        <div class="content">
+            <h3> Hi, It's me <span> Aayush Kafle </span></h3>
+            <p class="info"> I am a Junior at UNM studying Computer Science with a 
+                minor in Mathematics. 
+            </p>
+            <br>
+            <div class="box-container">
+                <div class="box">
+                    <p> <span> Age: </span> 21 </p>
+                    <p> <span> Gender: </span> Male</p>
+                    <p> <span> Experience: </span> 4 years </p>
+                </div>
+
+                <div class="box">
+                    <p> <span> Language: </span> English, Nepali, Hindi, Spanish(basic)</p>
+                    <p> <span> Phone: </span>+1 (505) 677 2730 </p>
+                    <p> <span> Email: </span> aayushkafle308@gmail.com </p>
+                    <p> <span> Address: </span> Albuquerque, New Mexico, USA </p>
+                </div>
+            </div>
+            <a href="#about" class="btn"> Download Resume </a>
+        </div>
+    </section>
+
+    <section class="con">
+        <div class = "row">
+            <div class="info-con">
+                <h1> FOLLOW ME ON </h1>
+
+                <div class="share"> 
+                    <a href="https://www.instagram.com/aayushkafle47/" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/aayush-kafle-594779233/" class="fab fa-linkedin"></a>
+                    <a href="https://github.com/Aayush015" class="fab fa-github"></a>
+                </div>
+            </div>
+        </div>
+        
+        <section class="Design" id="Design">
+            <h1 class="heading"> My <span> Skills</span></h1>
+
+            <div class="row">
+                <div class="progress">
+                    <h3> HTML, CSS, and JS <span> 80% </span></h3>
+                    <div class="bar bar-3-1"> <span></span> </div>
+                    <h3> Java <span> 80% </span></h3>
+                    <div class="bar bar-3-2"> <span></span> </div>                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h1 class="heading"> <span> My </span> Services </h1>
+            <div class="box-container">
+                <div class="box tilt">
+                    <i class="fas fa-code"></i>
+                    <h3> Web Development </h3>
+                    <p> I can create a website for you using HTML, CSS, and JS to meet required expectaitons. </p>
+                </div>
+            
+                <div class="box tilt">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3> Graphic Design </h3>
+                    <p> I can create a graphic designs for you that will work on all devices. </p>
+                </div>
+            </div>
+        </section>
+        <br>
+
+        <section class="portfolio" id="portfolio">
+            <h1 class="heading"> <span> My </span> portfolio</h1>
+
+            <div class="box-container">
+                <div class="box tilt">
+                    <img src="pictures/1.jpg" width="50%" alt="">
+                    <div class="content">
+                        <a href="" class="btn"> Cellular Automata </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="heading"> Contact <span> Me </span> </h1>
+            <div class="row">
+                <div class="image">
+                    <img src="preloader/preloader.gif" alt="">
+                </div>
+                <form action="https://formsubmit.co/aayushkafle308@gmail.com" method="post">
+                    <div class="inputBox">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="subject" placeholder="Subject">
+                        <input type="number" name="phone" placeholder="Phone">
+                    </div>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <input type="submit" name="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 
     <script src="scripts.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
 </body>
 </html>

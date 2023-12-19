@@ -57,7 +57,10 @@ header {
     margin-left: 10px; /* Adjust the margin as needed */
 }
 
-.loader-container{
+/*
+    Written pre-loader, however, it is not fully functional. 
+*/
+.loader-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -69,12 +72,14 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    transition: top 0.5s, opacity 0.5s; /* Add transitions for smoother effect */
+}
 
- }
- .loader-container img{
+.loader-container img {
     width: 35rem;
- }
- .loader-container.fade-out{
+}
+
+.loader-container.fade-out {
     top: 110%;
     opacity: 0;
- }
+}
