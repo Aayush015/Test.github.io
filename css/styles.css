@@ -1,85 +1,106 @@
-/* General styling */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+/* describe main components used in other CSS attributes */
+/* start */
+:root{
+    --green:#099e47;
+    --black:#444;
+    --blue:rgb(58, 35, 102);
+    --gold:rgb(224, 187, 21);
+    --rad:rgb(182, 7, 7);
+    --light-black:#666;
+    --light-bg:#eee;
+    --light-color:#777;
+    --bg-color:#e6e6e6;
+    --border:.1rem solid rgba(44, 51, 90, 0.2);
+    --box-shadow:.4rem .4rem 1rem rgb(16, 15, 15),
+                -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset:.4rem .4rem 1rem rgb(62, 84, 103) inset,
+                      -.4rem -.4rem 1rem #fff inset;
 }
-
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul {
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.navbar a {
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
     text-decoration: none;
-    color: white;
-    padding: 10px;
+    text-transform: capitalize;
+    transition: all .3s linear;
 }
+/* end */
 
-/* Home section styling */
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100vh;
-}
-
-.content {
-    text-align: left;
-}
-
-/* Image styling */
-.home .content img {
-    width: 15rem; /* Adjust the width as needed */
-    height: auto;
-    border-radius: 50%; /* Ensures a circular shape */
-    object-fit: cover;
-    border: 1rem solid var(--rad);
-    border-left: rgb(85, 12, 18);
+/* homepage buttons */
+/* start */
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding:10px 30px;
+    border-radius: 6rem;
     cursor: pointer;
-    margin-left: 10px; /* Adjust the margin as needed */
+    font-size: 17px;
+    background-color: var(--blue);
+    color:var(--bg-color);
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+ }
+ 
+ .btn:hover{
+    box-shadow: rgb(110, 2, 111);
+    color:rgb(38, 140, 98);
+    letter-spacing: .2rem;
+ }
+/* end */
+
+/* About section present on the second page of the website */
+/* start */
+.about .row .image{
+    text-align: center;
+    flex:1 1 25rem;
 }
 
-/*
-    Written pre-loader, however, it is not fully functional. 
-*/
-.loader-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 10000;
-    background: #fff;
+.about .row .image img{
+    width:30rem;
+    border-radius: 6.2rem 20rem 40% ;
+    border:1rem solid rgb(206, 162, 17);
+    box-shadow: 0 .5rem 2rem rgb(100, 2, 11);
+}
+/* end */
+
+/* Home section of the website (First page) */
+/* start */
+.home{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    transition: top 0.5s, opacity 0.5s; /* Add transitions for smoother effect */
+    position: relative;
 }
 
-.loader-container img {
-    width: 35rem;
+.home .content{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 1rem;
 }
 
-.loader-container.fade-out {
-    top: 110%;
-    opacity: 0;
+.home .content img{
+    width: 100%;
+    max-width: 50rem;
+    border-radius: 50%;
+    border: .5rem solid rgb(206, 162, 17);
+    box-shadow: 0 .5rem 2rem rgb(100, 2, 11);
+
+}
+
+#menu-bars{
+    position: fixed;
+    z-index: 10000;
+    top:1rem; left:1rem;
+    padding:1rem 1.5rem;
+    border-radius: .5rem;
+    color:rgb(206, 206, 206);
+    background:rgb(6, 4, 61);
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
 }
