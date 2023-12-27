@@ -92,6 +92,13 @@
 
 }
 
+.home #particles-js{
+    position: absolute;
+    top:0; left:0;
+    height:100%;
+    width:100%;
+}
+
 #menu-bars{
     position: fixed;
     z-index: 10000;
