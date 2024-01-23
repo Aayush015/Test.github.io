@@ -25,7 +25,7 @@
     outline: none;
     border: none; /* Add a border */
     text-decoration: blink; /* Change text decoration */
-    text-transform: capitalize; /* Change text transform */
+    text-transform: none; /* Change text transform */
     transition: all 0.5s linear;
 }
 
