@@ -88,7 +88,7 @@ label .menu {
     z-index: 100;
     width: 200px;
     height: 200px;
-    background: #80d598;
+    background: #6acf87;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -129,7 +129,7 @@ label .menu {
   label input { display: none; }
   
   label input:checked + .menu {
-    box-shadow: 0 0 0 15vw #51e2f5, 0 0 0 30vh #ab71e9;
+    box-shadow: 0 0 0 15vw #d9a2de, 0 0 0 30vh #ab71e9;
     border-radius: 30%;
     
   }
@@ -182,10 +182,10 @@ label .menu {
     
   }
 
+  /* CSS for home screen profile image and summary */
 .home{
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
 }
 
@@ -194,6 +194,7 @@ label .menu {
     top:0; left:0;
     height:100%;
     width:100%;
+    background-color: #e9bced;
 }
 
 .home::before{
@@ -206,31 +207,23 @@ label .menu {
 
 .home .content{
     text-align: center;
-    position: relative;
+    position: static;
     z-index: 1;
 }
 
 .home .content img{
-    
+    justify-content: right;
     width:30rem;
-    border-radius: 10rem 20rem;
+    border-radius: 5rem 5rem;
     object-fit: cover;
-    border:1rem solid var(--rad);
+    border:0.009rem solid var(--rad);
     border-left: rgb(83, 6, 12);
-    cursor: pointer;
 }
 
 .home .content h3{
     font-size: 4rem ;
-    color:rgb(119, 3, 129);
-    text-transform: uppercase;
-
-}
-
-.home .content h3 span{
-    color:var(--gold);
-    
-    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+    justify-content: left;
 }
 
 .home .content p{
@@ -239,6 +232,7 @@ label .menu {
     font-size: 3.2rem;
     line-height: 3;
 }
+/** Home page ends here */
 
 .about .row{
     display: flex;
