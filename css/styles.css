@@ -206,12 +206,15 @@ label .menu {
 }
 
 .home .content{
+    display: flex;
+    flex-direction: row;
     text-align: center;
     position: static;
     z-index: 1;
 }
 
 .home .content img{
+    z-index: 1;
     justify-content: right;
     width:30rem;
     border-radius: 5rem 5rem;
@@ -220,16 +223,31 @@ label .menu {
     border-left: rgb(83, 6, 12);
 }
 
+.home .content .text {
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+    text-align: left;
+}
+
+.home .content .text .btn{
+    z-index: 1;
+    width: 200px; 
+    height: 50px; 
+    padding: 20px 20px; 
+    font-size: 16px; 
+    margin-top: 10%;}
+
 .home .content h3{
     font-size: 4rem ;
-    color:rgb(0, 0, 0);
+    color:rgba(0, 0, 0, 0.76);
     justify-content: left;
 }
 
 .home .content p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgba(6, 5, 73, 0.76);
-    font-size: 3.2rem;
+    color:rgba(0, 0, 0, 0.76);
+    font-size: 2.5rem;
     line-height: 3;
 }
 /** Home page ends here */
