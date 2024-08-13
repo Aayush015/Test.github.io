@@ -183,43 +183,66 @@ label .menu {
   }
 
   /* CSS for home screen profile image and summary */
-.home{
+.home {
     display: flex;
-    align-items: center;
+    align-items: left;
     position: relative;
+    flex-direction: column;
 }
 
-.home #particles-js{
-    position: absolute;
-    top:0; left:0;
-    height:100%;
-    width:100%;
-    background-color: #e9bced;
-}
-
-.home::before{
-    content: '';
-    position: absolute;
-    top:0; left:0;
-    height:100%;
-    width:100%;
-}
-
-.home .content{
+.home .content {
     display: flex;
     flex-direction: row;
     text-align: center;
-    position: static;
     z-index: 1;
+    margin-top: 7%;
 }
 
-.home .content img{
+.home .logo {
     z-index: 1;
-    justify-content: right;
-    width:30rem;
+    align-items: center;
+    justify-content: left;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 2rem; /* Adjusts spacing below the logo if needed */
+}
+
+.home .logo img {
+    width: 50px; 
+    height: 50px;
+    margin-right: 10px; 
+}
+
+.home .logo h3 {
+    font-size: 2rem; 
+    color: rgba(0, 0, 0, 0.76);
+    margin: 0; 
+}
+
+.home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e9bced;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home .content img {
+    z-index: 1;
+    width: 35rem;
     border-radius: 5rem 5rem;
     object-fit: cover;
-    border:0.009rem solid var(--rad);
+    border: 0.009rem solid var(--rad);
     border-left: rgb(83, 6, 12);
 }
 
@@ -228,30 +251,33 @@ label .menu {
     z-index: 1;
     flex-direction: column;
     text-align: left;
+    margin-right: 7%;
 }
 
-.home .content .text .btn{
+.home .content .text .btn {
     z-index: 1;
     width: 200px; 
     height: 50px; 
     padding: 20px 20px; 
     font-size: 16px; 
-    margin-top: 10%;}
-
-.home .content h3{
-    font-size: 4rem ;
-    color:rgba(0, 0, 0, 0.76);
-    justify-content: left;
+    margin-top: 10%;
 }
 
-.home .content p{
+.home .content h3 {
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.home .content p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgba(0, 0, 0, 0.76);
+    color: rgba(0, 0, 0, 0.76);
     font-size: 2.5rem;
     line-height: 3;
 }
+
 /** Home page ends here */
 
+/* About section starts here */
 .about .row{
     display: flex;
     flex-wrap: wrap;
