@@ -290,7 +290,7 @@ label .menu {
     flex: 1 1 35rem;
     position: relative;
     padding-right: 2rem;
-    height: 55rem; 
+    height: 50rem; 
     width: 65rem;
 }
 
@@ -368,6 +368,40 @@ label .menu {
     color: rgb(22, 88, 63);
     padding: .5rem 0;
     line-height: 2;
+}
+
+/* Styles for buttons */
+.about .row .content .btn {
+    display: block;
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    margin: 1rem 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* First button styling */
+.about .row .content .btn:first-of-type {
+    background-color: #ffb84d; /* Light orange */
+    color: #fff;
+}
+
+/* Second button styling */
+.about .row .content .btn:last-of-type {
+    background-color: #4db8ff; /* Light blue */
+    color: #fff;
+}
+
+/* Hover effects */
+.about .row .content .btn:hover {
+    background-color: #ff751a; /* Darker orange on hover */
+}
+
+.about .row .content .btn:last-of-type:hover {
+    background-color: #3399ff; /* Darker blue on hover */
 }
 /** About section ends here */
 
