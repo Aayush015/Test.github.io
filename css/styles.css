@@ -405,35 +405,6 @@ label .menu {
 }
 /** About section ends here */
 
-
-.services .box-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-}
-
-.services .box-container .box{
-    flex:1 1 30rem;
-    border-radius: .5rem;
-    background:#fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    padding:2rem;
-    text-align: center;
-}
-
-.services .box-container .box h3{
-    color:#222;
-    font-size: 2.5rem;
-    padding-top:1rem;
-}
-
-.services .box-container .box p{
-    color:#333;
-    font-size:1.7rem;
-    padding:1rem 0;
-    line-height: 2;
-}
-
 .portfolio .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -469,49 +440,6 @@ label .menu {
 
 .portfolio .box-container .box:hover .content{
     left:0;
-}
-
-.Design .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    gap:2rem;
-}
-
-.Design .row .progress{
-    flex:1 1 40rem;
-}
-
-.Design .row .progress h3{
-    color:var(--black);
-    font-weight: normal;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.Design .row .progress .bar{
-    box-shadow: var(--box-shadow);
-    border-radius: 5rem;
-    height:2rem;
-    padding:.5rem;
-    margin:1rem 0;
-}
-
-.Design .row .progress .bar span{
-    display: block;
-    height: 100%;
-    background: rgb(91, 1, 79);
-    border-radius: 5rem;
-}
-
-.Design .row .progress .bar-3-1 span{
-    width: 80%;
-}
-
-.Design .row .progress .bar-3-2 span{
-    width: 80%;
 }
 
 .contact .row{
@@ -569,8 +497,8 @@ label .menu {
     margin:.5rem 0;
 }
   
-
-  .con .row .info-con h1 {
+/* CSS for social media links */
+.con .row .info-con h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: rgb(15, 3, 10);
@@ -596,7 +524,7 @@ label .menu {
     padding: .5rem 0;
   }
   
-  .con .row .info-con  .i {
+  .con .row .info-con .i {
     font-size: 2rem;
     color: rgb(220, 20, 47);
   }
@@ -616,25 +544,17 @@ label .menu {
     text-align: center;
     margin-right: .3rem;
   }
+  /* Social Media CSS ends here */
 
-::-webkit-scrollbar{
-   width: 10px;
+/* Hide the scroll bar */
+body::-webkit-scrollbar {
+    display: none;
 }
-
-::-webkit-scrollbar-track{
-   background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb{
-   background-color: var(--blac);
-}
-
 /*
     All CSS for home screen ends here 
 */ 
 
 /* CSS for preloader */
-
 .loader-container{
     position: fixed;
     top: 0;
