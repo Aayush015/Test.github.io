@@ -628,7 +628,7 @@ h3.my-profession
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 30px 15px;
-    text-align: center;
+    text-align: left;
     transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner:hover
