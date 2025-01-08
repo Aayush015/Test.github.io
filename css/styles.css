@@ -708,6 +708,7 @@ h3.my-profession
 }
 .portfolio .portfolio-item-inner {
     border: 6px solid var(--bg-black-100);
+    background-color: rgba(161, 158, 158, 0.7);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s;
