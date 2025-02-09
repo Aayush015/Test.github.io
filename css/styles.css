@@ -714,6 +714,7 @@ h3.my-profession
     overflow: hidden;
     transition: transform 0.3s;
 }
+
 .portfolio .portfolio-item-inner:hover {
     transform: scale(1.05);
 }
