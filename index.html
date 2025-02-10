@@ -484,42 +484,66 @@
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
                     <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
                     <!-- ===== Contact Form ===== -->
-                     <div class="row">
+                    <div class="row">
                         <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                            <form id="contact-form">
+                                <div class="row">
+                                    <!-- Name Field -->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                        </div>
+                                    </div>
+                                    <!-- Email Field -->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+
+                                <div class="row">
+                                    <!-- Phone Field -->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="phone" class="form-control" placeholder="Your Phone Number" required>
+                                        </div>
+                                    </div>
+                                    <!-- Location Field -->
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="location" class="form-control" placeholder="Your Location (City, Country)">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+
+                                <div class="row">
+                                    <!-- Subject Field -->
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject (Optional)">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+
+                                <div class="row">
+                                    <!-- Message Field -->
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn">Send Message</button>
+
+                                <div class="row">
+                                    <!-- Submit Button -->
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
-                     </div>
-                </div>
+                    </div>
             </section>
             <!-- ===== Contact Section End ===== -->
         </div>
@@ -550,5 +574,7 @@
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
     <script src="js/projects.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/email.js"></script>
 </body>
 </html>
