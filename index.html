@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body class="dark">
@@ -549,8 +550,27 @@
         </div>
         <!-- ===== Main Content End ===== -->
     </div>
-
     <!-- ===== Main Container End ===== -->
+
+    <!-- ===== Chatbot Start ===== -->
+     <div id="chatbot-container">
+        <div id="chatbot-icon">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                <span>Aayush's Assistant</span>
+                <button id="close-chatbot">&times;</button>
+            </div>
+            <div id="chatbot-messages">
+                <!-- Messages will be appended here by js-->
+            </div>
+            <div id="chatbot-input-area">
+                <input type="text" id="chatbot-input" placeholder="Ask about me or navigation">
+                <button id="chatbot-send">Send</button>
+            </div>
+        </div>
+     </div>
     <!-- ===== Style Switcher Start ===== -->
     <div class="style-switcher">
         <div class="style-switcher-toggler s-icon">
@@ -576,5 +596,6 @@
     <script src="js/projects.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/email.js"></script>
+    <script src="js/chatbot.js"></script>"
 </body>
 </html>
